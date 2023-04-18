@@ -1,6 +1,7 @@
 import React from "react";
 import css from './App.module.css';
 import Statistics from './Statistics';
+import Notification from './Notification';
 
 class App extends React.Component {
 
@@ -36,6 +37,8 @@ class App extends React.Component {
   };
 
 	render () {
+		const total = this.countTotalFeedback();
+
 		return (<div className={css.feedback}>
 			<p className={css.feedback__declaration}>Please leave feedback</p>
 			<div className={css.feedback__action}>
@@ -44,32 +47,17 @@ class App extends React.Component {
 				<button className={css.feedback__btn} type='button' onClick={this.handleBad}>Bad</button>
 			</div>
 
-			<Statistics 
+			{total > 0 ? (<Statistics 
 				onGood={this.state.good}
 				onNeutral={this.state.neutral} 
 				onBad={this.state.bad} 
 				onCountPositiveFeedbackPercentage={this.countPositiveFeedbackPercentage} 
-				onCountTotalFeedback={this.countTotalFeedback}
+				onCountTotalFeedback={this.countTotalFeedback} 
 				/>
-
-			{/* <p className={css.feedback__declaration}>Statistics</p>
-			<div className={css.feedback__stat}>
-				<p className={css.feedback__text}>
-					Good: {this.state.good}
-				</p>
-				<p className={css.feedback__text}>
-					Neutral: {this.state.neutral}
-				</p>
-				<p className={css.feedback__text}>
-					Bad: {this.state.bad}
-				</p>
-				<p className={css.feedback__text}>
-					Total: {this.countTotalFeedback()}
-				</p>
-				<p className={css.feedback__text}>
-					Positive feedback: {this.countPositiveFeedbackPercentage()}%
-				</p>
-			</div> */}
+			  ) : (<Notification
+				message="There is no feedback" 
+				/>
+				)}
 		</div>)
 	}
 };
