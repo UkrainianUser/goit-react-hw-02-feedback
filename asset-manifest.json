@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/UkrainianUser/goit-react-hw-02-feedback/static/css/main.db188f3f.css",
-    "main.js": "/UkrainianUser/goit-react-hw-02-feedback/static/js/main.e30a0394.js",
-    "index.html": "/UkrainianUser/goit-react-hw-02-feedback/index.html",
-    "main.db188f3f.css.map": "/UkrainianUser/goit-react-hw-02-feedback/static/css/main.db188f3f.css.map",
-    "main.e30a0394.js.map": "/UkrainianUser/goit-react-hw-02-feedback/static/js/main.e30a0394.js.map"
+    "main.css": "/goit-react-hw-02-feedback/static/css/main.db188f3f.css",
+    "main.js": "/goit-react-hw-02-feedback/static/js/main.e30a0394.js",
+    "index.html": "/goit-react-hw-02-feedback/index.html",
+    "main.db188f3f.css.map": "/goit-react-hw-02-feedback/static/css/main.db188f3f.css.map",
+    "main.e30a0394.js.map": "/goit-react-hw-02-feedback/static/js/main.e30a0394.js.map"
   },
   "entrypoints": [
     "static/css/main.db188f3f.css",
