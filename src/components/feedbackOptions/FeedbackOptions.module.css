@@ -1,0 +1,21 @@
+.feedback__btn {
+	box-sizing: border-box;
+	font-weight: 700;
+	font-size: 18px;
+	padding: 8px 12px;
+	border: 2px solid rosybrown;
+	border-radius: 12px;
+	background-color: bisque;
+	cursor: pointer;
+}
+
+.feedback__btn:hover {
+	background-color:rosybrown;
+	border: 2px solid bisque;
+}
+
+.feedback__action {
+	display: flex;
+	gap: 16px;
+	margin-bottom: 36px;
+}
